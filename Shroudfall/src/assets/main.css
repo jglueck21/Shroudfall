@@ -1,0 +1,27 @@
+@import './base.css';
+
+/* Mobile First – Hochformat optimiert */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+  transition: color 0.2s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-heading);
+  }
+}
+
+@media (min-width: 768px) {
+  #app {
+    padding: 0 1.5rem;
+  }
+}
